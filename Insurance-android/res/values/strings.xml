@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">App Name</string>
+    <string name="profile">Το Προφίλ Μου</string>
+    <string name="findBrokers">Αναζήτηση Διαμεσολαβητή</string>
+    <string name="NewInsurance">Αγορά Νέας Ασφάλειας</string>
+    <string name="Accident">Δήλωση Ζημιάς</string>
+    <string name="Exit">Έξοδος</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_accident">AccidentActivity</string>
+
+</resources>

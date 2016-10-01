@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_home"
+        android:title="@string/profile"
+        android:icon="@drawable/home"
+        android:showAsAction="always"/>
+
+    <item
+        android:id="@+id/empty"
+        android:title="@string/profile"
+        android:showAsAction="always"
+        android:icon="@android:drawable/ic_dialog_email"/>
+        
+    <item 
+        android:id="@+id/menu_item_options"
+        android:title="@string/profile"
+        android:icon="@drawable/info"
+        android:showAsAction="always">
+
+        <menu>
+
+            <item android:id="@+id/action_profile"
+                android:icon="@drawable/profile"
+                android:showAsAction="always"
+                android:title="@string/profile" />
+           
+            <item android:id="@+id/action_Accident"
+                android:icon="@drawable/accident"
+                android:showAsAction="always"
+                android:title="@string/Accident" />
+            
+            <item android:id="@+id/action_NewInsurance"
+                android:icon="@drawable/contract"
+                android:showAsAction="always"
+                android:title="@string/NewInsurance" />
+
+           
+            <item android:id="@+id/action_findBrokers"
+                android:icon="@drawable/search"
+                android:showAsAction="always"
+                android:title="@string/findBrokers" />
+            
+           
+            <item android:id="@+id/action_exit"
+                android:icon="@drawable/exit"
+                android:showAsAction="always"
+                android:title="@string/Exit" />
+            
+
+
+        </menu>
+
+    </item>
+      
+</menu>
