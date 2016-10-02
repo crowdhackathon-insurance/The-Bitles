@@ -15,8 +15,8 @@ class Account(AbstractBaseUser):
     last_name = models.CharField(max_length=40)
     dateOfBirth = models.DateField(default=datetime.date.today())
 
-    telephone = models.PositiveIntegerField(default=1, blank=True)
-    mobile = models.PositiveIntegerField(default=1, blank=True)
+    telephone = models.PositiveIntegerField(default=0, blank=True)
+    mobile = models.PositiveIntegerField(default=0, blank=True)
     # 1 of 2 phone numbers is mandatory. Validation will be done in the form, later.
 
     profession = models.PositiveIntegerField(choices=Professions)
