@@ -11,26 +11,88 @@
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+		<script>
+			function selectimage()
+			{
+				var slot1=document.getElementById("slot1").children;
+				var sl1=Math.floor(Math.random() * 6);
+				for(var i=0;i<=7;i++)
+				{
+					slot1[i].style="display:none";
+				}
+				
+				slot1[6].style="display:block";
+				setTimeout(function()
+							{ 
+								slot1[6].style="display:none";
+								slot1[sl1].style="display:block";
+								slot1[7].style="display:none";
+							},500);
+				//slot1[sl1].style="display:block";
+				//slot1[7].style="display:none";
+				
+				var slot2=document.getElementById("slot2").children;
+				var sl2=Math.floor(Math.random() * 5);
+				for(var i=0;i<=7;i++)
+				{
+					slot2[i].style="display:none";
+				}
+				
+				slot2[6].style="display:block";
+				setTimeout(function()
+							{ 
+								slot2[6].style="display:none";
+								slot2[sl2].style="display:block";
+								slot2[7].style="display:none";
+							},800);
+				//slot2[sl2].style="display:block";
+				//slot2[7].style="display:none";
+				
+				var slot3=document.getElementById("slot3").children;
+				var sl3=Math.floor(Math.random() * 5);
+				for(var i=0;i<=7;i++)
+				{
+					slot3[i].style="display:none";
+				}
+				
+				slot3[6].style="display:block";
+				setTimeout(function()
+							{ 
+								slot3[6].style="display:none";
+								slot3[sl3].style="display:block";
+				slot3[7].style="display:none";
+							},650);
+				//slot3[sl3].style="display:block";
+				//slot3[7].style="display:none";
+			}
+		
+		</script>
+		
 	<style>
 		.slot1
 		{
-			border: 5px solid;
+			border: 2px solid;
+			box-shadow: 1px 1px 1px;
 			margin-top:10%;
-			margin-left:10%;
+			margin-left:35%;
 			float: left;
 		}
 		
 		.slot2
 		{
-			border: 5px solid;
+			border: 2px solid;
+			box-shadow: 1px 1px 1px;
 			margin-top:10%;
+			margin-left:5px;
 			float: left;
 		}
 		
 		.slot3
 		{
-			border: 5px solid;
+			border: 2px solid;
+			box-shadow: 1px 1px 1px;
 			margin-top:10%;
+			margin-left:5px;
 			float:left;
 		}
 	</style>
@@ -39,7 +101,17 @@
 	</head>
 	<body>
 		
-		<div class="slot1">
+		<div class="slot1" id="slot1">
+			<img src="us-dollar-xxl.png" alt="Smiley face" height="100" width="100" style="display:none;">
+			<img src="fire-512.png" alt="Smiley face" height="100" width="100" style="display:none">
+			<img src="car-512.png" alt="Smiley face" height="100" width="100" style="display:none">
+			<img src="racing_helmet.png" alt="Smiley face" height="100" width="100" style="display:none" >
+			<img src="house-icon.png" alt="Smiley face" height="100" width="100" style="display:none">
+			<img src="run-robber-29.png" alt="Smiley face" height="100" width="100" style="display:none" >
+			<img src="process.jpg" alt="Smiley face" height="100" width="100" style="display:none" >
+			<img src="blanc.png" alt="Smiley face" height="100" width="100"  >
+		</div>
+		<div class="slot2" id="slot2">
 			<img src="us-dollar-xxl.png" alt="Smiley face" height="100" width="100" style="display:none">
 			<img src="fire-512.png" alt="Smiley face" height="100" width="100" style="display:none">
 			<img src="car-512.png" alt="Smiley face" height="100" width="100" style="display:none">
@@ -49,17 +121,7 @@
 			<img src="process.jpg" alt="Smiley face" height="100" width="100" style="display:none" >
 			<img src="blanc.png" alt="Smiley face" height="100" width="100"  >
 		</div>
-		<div class="slot2">
-			<img src="us-dollar-xxl.png" alt="Smiley face" height="100" width="100" style="display:none">
-			<img src="fire-512.png" alt="Smiley face" height="100" width="100" style="display:none">
-			<img src="car-512.png" alt="Smiley face" height="100" width="100" style="display:none">
-			<img src="racing_helmet.png" alt="Smiley face" height="100" width="100" style="display:none" >
-			<img src="house-icon.png" alt="Smiley face" height="100" width="100" style="display:none">
-			<img src="run-robber-29.png" alt="Smiley face" height="100" width="100" style="display:none" >
-			<img src="process.jpg" alt="Smiley face" height="100" width="100" style="display:none" >
-			<img src="blanc.png" alt="Smiley face" height="100" width="100"  >
-		</div>
-		<div class="slot3">
+		<div class="slot3" id="slot3">
 			<img src="us-dollar-xxl.png" alt="Smiley face" height="100" width="100" style="display:none">
 			<img src="fire-512.png" alt="Smiley face" height="100" width="100" style="display:none">
 			<img src="car-512.png" alt="Smiley face" height="100" width="100" style="display:none">
@@ -70,7 +132,7 @@
 			<img src="blanc.png" alt="Smiley face" height="100" width="100"  >
 		</div>
 		<p>
-				<button type="button" class="btn btn-default btn-lg" style="margin-top:20%;">Press me</button>
+				<button type="button" class="btn btn-default btn-lg" style="margin-top:20%; margin-left:-16%;" OnClick="selectimage();">Press me</button>
 		</p>
 	
 	</body>
