@@ -28,7 +28,11 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         MenuInflater inflater = getMenuInflater();
         getMenuInflater().inflate(R.menu.main, menu);
-        
+        CharSequence text = "You are on the Home Page";
+    	int duration = Toast.LENGTH_SHORT;
+    	Context context = getApplicationContext();
+    	Toast toast = Toast.makeText(context, text, duration);
+    	toast.show();
         return true;
     }
 
@@ -47,10 +51,14 @@ public class MainActivity extends Activity {
         	
         }
         else if(id == R.id.action_NewInsurance){
-        	
+        	Intent intent = new Intent(getBaseContext(),NewInsuranceActivity.class);
+        	if(intent!=null)
+        		startActivity(intent);
         }
         else if(id == R.id.action_findBrokers){
-        	
+        	Intent intent = new Intent(getBaseContext(),FindBrokersActivity.class);
+        	if(intent!=null)
+        		startActivity(intent);
         }
         else if(id == R.id.action_exit){
         	finish();

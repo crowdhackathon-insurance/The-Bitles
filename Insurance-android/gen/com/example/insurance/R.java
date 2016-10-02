@@ -12,6 +12,7 @@ public final class R {
     }
     public static final class color {
         public static final int black=0x7f040000;
+        public static final int white=0x7f040001;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -35,26 +36,57 @@ public final class R {
         public static final int search=0x7f020007;
     }
     public static final class id {
-        public static final int GridLayout1=0x7f090000;
-        public static final int action_Accident=0x7f090006;
-        public static final int action_NewInsurance=0x7f090007;
-        public static final int action_exit=0x7f090009;
-        public static final int action_findBrokers=0x7f090008;
-        public static final int action_profile=0x7f090005;
-        public static final int action_settings=0x7f090001;
-        public static final int empty=0x7f090003;
-        public static final int menu_home=0x7f090002;
-        public static final int menu_item_options=0x7f090004;
+        public static final int GridLayout1=0x7f090002;
+        public static final int LinearLayout1=0x7f090003;
+        public static final int LinearLayout2=0x7f09000c;
+        public static final int action_Accident=0x7f090016;
+        public static final int action_NewInsurance=0x7f090017;
+        public static final int action_exit=0x7f090019;
+        public static final int action_findBrokers=0x7f090018;
+        public static final int action_profile=0x7f090015;
+        public static final int action_settings=0x7f090011;
+        public static final int button1=0x7f09000b;
+        public static final int checkBox1=0x7f09000d;
+        public static final int checkBox2=0x7f090010;
+        public static final int checkBox3=0x7f09000f;
+        public static final int checkBox4=0x7f09000e;
+        public static final int container=0x7f09000a;
+        public static final int empty=0x7f090013;
+        public static final int menu_home=0x7f090012;
+        public static final int menu_item_options=0x7f090014;
+        public static final int pager=0x7f090000;
+        public static final int step1=0x7f090001;
+        public static final int textView1=0x7f090004;
+        public static final int textView2=0x7f090005;
+        public static final int textView3=0x7f090006;
+        public static final int textView4=0x7f090007;
+        public static final int textView5=0x7f090008;
+        public static final int textView6=0x7f090009;
     }
     public static final class layout {
         public static final int activity_accident=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_profile=0x7f030002;
+        public static final int activity_accident_step1=0x7f030001;
+        public static final int activity_find_brokers=0x7f030002;
+        public static final int activity_main=0x7f030003;
+        public static final int activity_new_insurance=0x7f030004;
+        public static final int activity_profile=0x7f030005;
+        public static final int activity_step1_tab=0x7f030006;
+        public static final int activity_step2_fragment=0x7f030007;
+        public static final int activity_step3_fragment=0x7f030008;
+        public static final int activity_swipe=0x7f030009;
+        public static final int fragment_step1_tab=0x7f03000a;
     }
     public static final class menu {
         public static final int accident=0x7f080000;
-        public static final int main=0x7f080001;
-        public static final int profile=0x7f080002;
+        public static final int accident_step1=0x7f080001;
+        public static final int find_brokers=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int new_insurance=0x7f080004;
+        public static final int profile=0x7f080005;
+        public static final int step1_tab=0x7f080006;
+        public static final int step2=0x7f080007;
+        public static final int step3=0x7f080008;
+        public static final int swipe=0x7f080009;
     }
     public static final class string {
         public static final int Accident=0x7f060004;
@@ -66,7 +98,14 @@ public final class R {
         public static final int hello_world=0x7f060007;
         public static final int profile=0x7f060001;
         public static final int title_activity_accident=0x7f060009;
+        public static final int title_activity_accident_step1=0x7f06000d;
+        public static final int title_activity_find_brokers=0x7f06000b;
+        public static final int title_activity_new_insurance=0x7f06000a;
         public static final int title_activity_profile=0x7f060006;
+        public static final int title_activity_step1_tab=0x7f06000e;
+        public static final int title_activity_step2_fragment=0x7f06000f;
+        public static final int title_activity_step3_fragment=0x7f060010;
+        public static final int title_activity_swipe=0x7f06000c;
     }
     public static final class style {
         /** 
